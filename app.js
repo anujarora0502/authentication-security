@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
@@ -23,7 +24,7 @@ const userSchema =new mongoose.Schema({
   password: String
 });
 
-const key = "Thisisourlittlesecret";
+const key = process.env.KEY;
 userSchema.plugin(encrypt,{secret: key,encryptedFields: ["password"]});
 
 
