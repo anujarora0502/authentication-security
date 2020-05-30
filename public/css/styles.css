@@ -14,3 +14,17 @@ body {
   color: #fff;
   background-color: #000;
 }
+
+.google{
+  background-color: orangered;
+  color: white;
+  padding: 4%;
+  font-size: 1.3rem;
+}
+
+.facebook{
+  background-color: royalblue;
+  color: white;
+  padding: 4%;
+  font-size: 1.3rem;
+}
